@@ -1,0 +1,62 @@
+<!-- ========================================================= 
+                    HEADER 
+==========================================================-->
+<div class="site-header--wrapper">
+  <div class="site-header border-border-color vedikas">
+    <div class="site-header-logo"><a
+        class="site-header-logo__link flex-item" href="#" itemprop="url" title="vedikas">
+      <!-- ========================================================= 
+                      HEADER  LOGO 
+      ===========================================================-->
+      <img alt="vedikas logo" class="site-header-logo__img Header-BG img-responsive" itemprop="logo"
+        src="../../assets/Images/ProjectName.png" alt="Vedikas" width="120px" height="50px" title="Vedikas"></a></div>
+  <div class="site-header__flex-spacer"></div>
+  <div class="site-header-nav" role="navigation">
+      <!-- ========================================================= 
+                      LOGIN DROP DOWN 
+      ===========================================================-->
+      <div class="dropdown Dropdown site-header-nav__dropdown" tabindex="-1" role="presentation">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="site-header-nav__icon-label">Login</span>
+          <!-- ========================================================= 
+                      LOGIN DROP DOWN SVGICON
+            ===========================================================-->
+            <span
+            class="SVGIcon SVGIcon--16px SVGIcon--inline-flex Dropdown__toggle-icon"><svg focusable="false"
+              data-id="SVG_CHEVRON_DOWN__16" width="16" height="16" viewBox="0 0 16 16">
+              <path fill="none" stroke-linecap="round" stroke-linejoin="round" d="M3 6l5 4.6L13 6"></path>
+            </svg></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a routerLink="/login">Owner Login</a></li>
+            <li><a routerLink="/login">User Login</a></li>
+          </ul>
+      </div>
+    <!-- ========================================================= 
+                      HELP DROP DOWN 
+      ===========================================================-->
+    <div class="dropdown Dropdown site-header-nav__dropdown site-header-help" tabindex="-1" role="presentation">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="site-header-nav__icon-label">Help</span>
+            <!--========================================================= 
+                      HELP DROP DOWN SVGICON
+            ===========================================================-->
+              <span
+                class="SVGIcon SVGIcon--16px SVGIcon--inline-flex Dropdown__toggle-icon"><svg focusable="false"
+                  data-id="SVG_CHEVRON_DOWN__16" width="16" height="16" viewBox="0 0 16 16">
+                  <path fill="none" stroke-linecap="round" stroke-linejoin="round" d="M3 6l5 4.6L13 6"></path>
+                </svg></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a routerLink="/help">Owner Help</a></li>
+                <li><a routerLink="/help">User Help</a></li>
+              </ul>
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+<app-searchbar></app-searchbar>
+<app-footer></app-footer>

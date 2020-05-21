@@ -1,0 +1,35 @@
+ /*=========================================================
+      01 -> HEADER
+  ===========================================================*/
+  .navbar {
+    position: relative;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+    background: #fafafa;
+}
+.navbar-brand {
+    float: left;
+    font-size: 20px;
+    padding: 12px 15px; 
+    height: 72px;
+   
+}
+.img-responsive {
+    display: block;
+    max-width: 150px;
+    height: 80px;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+.site-header.vedikas {
+    background: #f9f8f7
+  }
+  
+  .site-header.vedikas,
+  .site-header.vedikas a {
+    color: #15326f
+  }

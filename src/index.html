@@ -1,13 +1,265 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>VedikaUI</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <title>VedikaUI</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Bootstrap Js Links -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    </body>
+    </style>
+    <link type="text/css" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
+    <style>
+        .gm-ui-hover-effect {
+            opacity: .6
+        }
+
+        .gm-ui-hover-effect:hover {
+            opacity: 1
+        }
+    </style>
+    <style>
+        .gm-style .gm-style-cc span,
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-mtc div {
+            font-size: 10px;
+            box-sizing: border-box
+        }
+    </style>
+    <style>
+        @media print {
+
+            .gm-style .gmnoprint,
+            .gmnoprint {
+                display: none
+            }
+        }
+
+        @media screen {
+
+            .gm-style .gmnoscreen,
+            .gmnoscreen {
+                display: none
+            }
+        }
+    </style>
+    <style>
+        .gm-style-pbc {
+            transition: opacity ease-in-out;
+            background-color: rgba(0, 0, 0, 0.45);
+            text-align: center
+        }
+
+        .gm-style-pbt {
+            font-size: 22px;
+            color: white;
+            font-family: Roboto, Arial, sans-serif;
+            position: relative;
+            margin: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%)
+        }
+    </style>
+    <style>
+        .gm-style img {
+            max-width: none;
+        }
+
+        .gm-style {
+            font: 400 11px Roboto, Arial, sans-serif;
+            text-decoration: none;
+        }
+    </style>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <link rel="preconnect" crossorigin="" href="https://csvcus.homeaway.com">
+    <link rel="preconnect" crossorigin="" href="https://fonts.googleapis.com">
+    <link rel="preconnect" crossorigin="" href="https://odis.homeaway.com">
+    <link rel="preconnect" crossorigin="" href="https://fonts.gstatic.com">
+
+    <link rel="dns-prefetch" href="//csvcus.homeaway.com">
+    <link rel="dns-prefetch" href="//cdn.ravenjs.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//odis.homeaway.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+
+
+    <meta property="og:type" content="company">
+    <meta property="og:title" content="Vrbo">
+    <meta property="og:description"
+        content="Book amazing rentals on Vrbo - the most popular vacation rental site in the US. ✓+2 million rentals worldwide ✓19+ million reviews ✓Secure online payment ✓24/7 Customer Service">
+    <meta property="og:url" content="https://www.vrbo.com/search/keywords:hitec-city-hyderabad-telangana-india">
+    <meta property="og:image"
+        content="https://csvcus.homeaway.com/rsrcs-crs/cdn-logos/4.1.1/sitename/vrbo/web/og_image.jpg">
+    <meta property="og:site_name" content="Vrbo">
+    <meta property="og:locale" content="en_US">
+    <link rel="image_src" href="https://csvcus.homeaway.com/rsrcs-crs/cdn-logos/4.1.1/sitename/vrbo/web/image_src.png">
+
+    <link rel="icon" href="https://csvcus.homeaway.com/rsrcs-crs/cdn-logos/4.1.1/sitename/vrbo/web/favicon.ico">
+    <link rel="apple-touch-icon"
+        href="https://csvcus.homeaway.com/rsrcs-crs/cdn-logos/4.1.1/sitename/vrbo/web/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="https://csvcus.homeaway.com/rsrcs-crs/cdn-logos/4.1.1/sitename/vrbo/web/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="167x167"
+        href="https://csvcus.homeaway.com/rsrcs-crs/cdn-logos/4.1.1/sitename/vrbo/web/touch-icon-ipad-retina.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://csvcus.homeaway.com/rsrcs-crs/cdn-logos/4.1.1/sitename/vrbo/web/touch-icon-iphone-retina.png">
+    <link rel="shortcut icon" sizes="192x192"
+        href="https://csvcus.homeaway.com/rsrcs-crs/cdn-logos/4.1.1/sitename/vrbo/web/android-icon.png">
+    <meta name="msapplication-square310x310logo"
+        content="https://csvcus.homeaway.com/rsrcs-crs/cdn-logos/4.1.1/sitename/vrbo/web/microsoft-icon.png">
+
+    <link rel="stylesheet"
+        href="https://csvcus.homeaway.com/rsrcs-crs/traveler-search-ui/baseline-optimized-vrbo.15e4acee3a1409e93e47770772fa6062.css">
+    <link rel="preload"
+        href="https://csvcus.homeaway.com/rsrcs-crs/web-fonts/2.7.0/fonts/freight-sans/FreigSanLFProBooBL.woff2"
+        crossorigin="anonymous" as="font">
+    <link rel="preload" href="https://csvcus.homeaway.com/rsrcs-crs/web-fonts/2.7.0/webfonts-vrbo.min.css" as="style">
+    <link rel="stylesheet" href="https://csvcus.homeaway.com/rsrcs-crs/web-fonts/2.7.0/webfonts-vrbo.min.css"
+        type="text/css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://csvcus.homeaway.com/rsrcs-crs/traveler-search-ui/styles~31ecd969.b16288fc2b4b4e1e17ec.css">
+
+    <script async="" type="text/javascript" src="https://nexus.ensighten.com/away/production/Bootstrap.js"></script>
+    <script id="edap-ua" async="" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" src="https://ars.homeaway.com/polyfill.min.js?features=vrbo-default&amp;v=9" sync=""
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ars.homeaway.com/vrbo-analytics.min.js?v=2" sync=""
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.onCriticalReady = function (fn) {
+            window.onPolyfillsReady = window.onPolyfillsReady || [];
+            window.onPolyfillsReady.push(function () {
+                window.onAnalyticsReady = window.onAnalyticsReady || [];
+                window.onAnalyticsReady.push(function () {
+                    fn();
+                });
+            });
+        };
+    </script>
+
+    <script type="text/javascript" src="https://a.travel-assets.com/meso-loaders/expads-blocked.js"></script>
+
+    <script type="text/javascript">
+        window.google = window.google || {};
+    </script>
+
+
+    <script type="text/javascript">
+        window.ha = window.ha || {};
+        window.analyticsdatalayer = { "appenvironment": "production", "appname": "node-traveler-search-ui", "appversion": "master-2652-1fa22d425c", "mpaasregion": "us-east-1-vpc-d9087bbe", "monikerbrand": "vrbo", "displaycurrency": "USD", "displaylocale": "en_US", "visitorid": "c0c03e11-bc51-4815-b9b3-d3913e3a4403", "sessionid": "4c926755-29ad-47a1-9f42-bdc3ea203772", "requestmarker": "7f4b701f-d4d0-4e64-8f9f-1b3853423522", "publicuuid": "64d9a44d-b431-4f5a-b17a-229be7f7610c", "currency": "USD", "analyticsbrand": "vrbo", "pagetype": "search", "pageflow": "-1", "visitortype": "traveler", "sensitive": "false", "pagename": "-1", "keyword": "hitec-city-hyderabad-telangana-india", "numadults": "0", "numchildren": "0", "numinfants": "-1", "startdate": "-1", "enddate": "-1", "minbaths": "0", "maxbaths": "-1", "minbeds": "0", "maxbeds": "-1", "minprice": "0", "maxprice": "-1", "minsleeps": "0", "withpets": "false", "sort": "listing_score", "refinevalue": "-1", "refinebucket": "-1", "booking": "-1", "propertytype": "-1", "locationtype": "-1", "misc": "-1", "features": "-1", "pagination": "1" };
+        window.edapOptions = {
+            skipPageview: true,
+            skipFlush: false,
+            skipGA: false,
+            skipTagManager: false
+        };
+        window.edap = window.edap || [];
+        window.cookieconsent = window.cookieconsent || [];
+        window.__GRAPHQL_QUERY__ = null;
+        window.__DEBUG_COMPONENT_UPDATES__ = false;
+        window.__IE11__ = typeof navigator !== 'undefined' && navigator.userAgent.indexOf('Trident') > -1;
+
+
+        window.__SCRIPT_LOAD_ERRORS__ = [];
+        window.__REPORT_SCRIPT_LOAD_ERROR__ = function __REPORT_SCRIPT_LOAD_ERROR__(event) {
+            var cdnUrl = "https://csvcus.homeaway.com/rsrcs-crs";
+
+            if (event.target.src.indexOf(cdnUrl) === -1) return;
+
+            var label =
+                event.target.crossOrigin === 'anonymous'
+                    ? 'Caught CORS resource loading issue'
+                    : 'Caught resource loading issue';
+            if (window.Raven && window.Raven.captureMessage) {
+                Raven.captureMessage(label + ': ' + event.target.src.slice(cdnUrl.length));
+            }
+        };
+        window.addEventListener(
+            'error',
+            function (event) {
+                if (event.target && event.target.tagName === 'SCRIPT') {
+                    if (window.Raven) {
+                        window.__REPORT_SCRIPT_LOAD_ERROR__(event);
+                    } else {
+                        window.__SCRIPT_LOAD_ERRORS__.push(event);
+                    }
+                }
+            },
+            true
+        );
+
+    </script>
+    <script async="" type="text/javascript" crossorigin="anonymous"
+        src="https://csvcus.homeaway.com/rsrcs-crs/edap-integrations/10.34.0/javascripts/edap-integrations.min.js?cors=true"></script>
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        window.errorReporterConfig = { url: '/serp/api/errors' }
+    </script>
+
+
+
+    <script type="text/javascript" name="livelab-autoExpose">
+        window.__ABACUS__ = window.__ABACUS__ || [];
+        window.__ABACUS__.push('ha_livelab_demo');
+        window.__ABACUS__.push('HA_TRAVELER_FULLSTORY_LIVELAB');
+        window.__ABACUS__.push('ha_graded_browser_dialog');
+        window.__ABACUS__.push('ha_recaptcha');
+        window.__ABACUS__.push('ha_uitk_font_smoothing');
+        window.__ABACUS__.push('HA_PTA_AFFILIATE_CO_BRAND');
+        window.__ABACUS__.push('fpsmeter');
+        window.__ABACUS__.push('HA_TRAVELER_HEADER_CACHE');
+        window.__ABACUS__.push('Vrbo_ux_saved_filters');
+        window.__ABACUS__.push('VRBO_SAVE_CURRENCY');
+        window.__ABACUS__.push('HA_NATIVE_ADOPTION_MWEB_FOOTER_V1');
+        window.__ABACUS__.push('vrbo_ux_guest_picker_ages');
+        window.__ABACUS__.push('HA_UX_LABSTUDY_CANCELLATION_FLEXIBILITY');
+    </script>
+
+
+
+
+
+
+    <script nomodule="" defer="" src="https://c.travel-assets.com/meso-loaders/ads-loader.es5.js"></script>
+    <script type="module" async="" defer="" src="https://c.travel-assets.com/meso-loaders/ads-loader.js"></script>
+
+</html>
+
 </head>
+
 <body>
-  <app-root></app-root>
+    <app-root></app-root>
 </body>
+
 </html>

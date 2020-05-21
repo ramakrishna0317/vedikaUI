@@ -1,0 +1,12 @@
+
+/*=========================================================
+      FUNCTION HALL LIST 
+  ===========================================================*/
+  .Application__results {
+    min-height: 400px;
+    padding-top: 16px;
+}
+.Application__section--padded, .padded {
+    padding: 0 50px;
+    min-width: 768px;
+}

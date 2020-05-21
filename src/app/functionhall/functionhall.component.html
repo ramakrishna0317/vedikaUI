@@ -1,0 +1,60 @@
+<!--=========================================================
+                     FUNCTION HALLS VIEW 
+    ===========================================================-->
+<div id="Application__resultsViewport" class="Application__resultsViewport">
+    <div class="Application__resultsColumn">
+            <!--========================================================
+                        FUNCTION HALLS LIST SECTION WISE 
+            ===========================================================-->
+        <section class="Application__results Application__section--padded">
+            <!-- ========================================================= 
+                                FUNCTION HALLS LIST 
+                ===========================================================-->
+            <div *ngFor="let item of functionHalls"  (click)="onSelect(item)">
+                <a [routerLink]="['/functionhallpage/']">
+                <div class="Hit media-flex media-flex--left media-flex--xs" data-wdio="hit" role="listitem">
+                    <!-- =========================================================
+                                FUNCTION HALL IMAGE VIEW 
+                        =========================================================== -->
+                    <div class="HitCarousel Hit__thumbnail">
+                        <span aria-hidden="true">
+                        <a aria-label="View property" class="SimpleImageCarousel" data-index="0" data-wdio="SimpleImageCarousel--main" role="button" tabindex="-1" style="background-image: url(&quot;https://icasnetwork.com/wp-content/uploads/2018/02/DSC_0976.jpg;);"> </a>
+                        </span>
+                    </div>
+                    <!-- ========================================================= 
+                                        FUNCTION HALL DETAILS VIEW 
+                        ===========================================================-->
+                        <a class="media-flex__content" tabindex="0">
+                        <div class="media-flex__body">
+                            <h2 class="HitInfo__headline hover-text" aria-hidden="true">{{ item.functionHallName }}</h2>
+                                <div class="z">
+                                    <div class="Details__propertyType Details__label" aria-hidden="true">{{ item.ownerFirstName }}</div>
+                                        <div class="Details__functionhalls Details__label" aria-hidden="true">{{ item.street }}</div>
+                                            <div class="Details__functionhalls Details__label" aria-hidden="true">{{ item.state }}</div>
+                                                <div class="Details__sleeps Details__label" aria-hidden="true">{{ item.city }}</div>
+                                                    <div class="Details__label" aria-hidden="true">{{ item.zipcode }}</div>
+                                </div>
+                        <!-- =========================================================
+                                        BOOK  FUNCTION HALL  
+                             =========================================================== -->
+                                    <div class="HitInfo__labels">
+                                        <div class="" role="presentation" style="display: inline-block; outline: 0px; position: relative;">
+                                            <span role="presentation" class="HitInfo__labels_item label label-default label-49">Book This Function Hall</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        <!-- ========================================================= 
+                                        CLICK FOR THIS FUNCTION HALL
+                            ===========================================================-->
+                        <footer class="media-flex__footer hover-bg">
+                            <div class="HitInfo__priceSuperlativeGroup--old">
+                                <div class="HitInfo__price">Click For This Function Hall</div>
+                            </div>
+                        </footer>
+                    </a>
+                </div></a>
+            </div>
+        </section>
+    </div>
+</div>

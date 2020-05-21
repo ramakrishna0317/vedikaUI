@@ -1,0 +1,53 @@
+
+<div class="pdp-layout">
+    <div class="pdp-layout__left-col">
+        <div>
+            <div id="photos" class="pdp-layout__carousel" aria-hidden="true">
+                <div class="main-image__container">
+                    <div class="main-image" style="height: 512px;">
+                        <div class="main-image__photos">
+                            <!-- <div class="main-image__photo-wrapper"><img class="main-image__photo"
+                                    src="https://content3.jdmagicbox.com/comp/villupuram/m9/9999p4146.4146.160211123912.k5m9/catalogue/settu-studio-and-hd-video-villupuram-ho-villupuram-photographers-4d9kqzq.jpg"
+                                    width="766"></div> -->
+                            <!-- <div class="main-image__photo-wrapper"><img class="main-image__photo"
+                                    src="https://mcdn.wallpapersafari.com/medium/69/70/GKBXW2.jpg"
+                                    width="766"></div>
+                            <div class="main-image__photo-wrapper"><img class="main-image__photo"
+                                    src="https://ak.picdn.net/shutterstock/videos/25048415/thumb/3.jpg"
+                                    width="766"></div> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div *ngFor="let item of functionHalls">
+                <h2 class="HitInfo__headline hover-text" aria-hidden="true">{{ item.functionHallName }}</h2>
+                    <div class="HitInfo__details">
+                        <div class="Details__propertyType Details__label" aria-hidden="true">{{ item.ownerFirstName }}</div>
+                            <div class="Details__functionhalls Details__label" aria-hidden="true">{{ item.street }}</div>
+                                <div class="Details__functionhalls Details__label" aria-hidden="true">{{ item.state }}</div>
+                                    <div class="Details__sleeps Details__label" aria-hidden="true">{{ item.city }}</div>
+                                        <div class="Details__label" aria-hidden="true">{{ item.zipcode }}</div>
+                    </div></div>
+            <div class="pdp-layout__main-content ">
+                <div class="tablet-rail__column">
+                    <div>
+                        <div class="primary-cta" data-wdio="primary-cta">
+                            <div class="cta-sticky-container border-border-color"><button
+                                    class="btn btn-primary btn-block" aria-label="Get A Quoate" type="button"><span
+                                        class="btn__label btn__label--truncate">Get A Quoate</span></button></div>
+                        </div>
+                    </div>
+
+                    <div class="nav-anchor nav-anchor__last" id="rates-availability">
+                        <div>
+                            <div style="margin-bottom: 0px;">
+                                <section class="pdp-section--availability">
+                                    <div style="min-height: 1em;">
+                                        <div></div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div></div></div></div></div>
