@@ -1,0 +1,48 @@
+node{
+         stage('node js installation'){
+         sh label: '', script: '''#!/bin/bash
+         echo this script done by shiva
+         echo Add Node.js APT Repository
+         sudo apt update
+         sudo apt -y upgrade
+         sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
+         sudo curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+         echo Install Node.js 12 on Ubuntu / Debian / Linux Mint
+         sudo apt -y install nodejs
+         sudo apt -y  install gcc g++ make
+         echo Confirm Node.js 12 installation by checking the version installed.
+         sudo node --version
+         sudo npm --version
+         echo Install Angular on Ubuntu 18.04
+         sudo npm install -g @angular/cli@9   
+         echo cloning github url
+         sudo git init
+         sudo git clone https://github.com/shivastunts0327/vedikaUI.git
+         cd vedikaUI
+         echo node modules installing
+         sudo npm install
+         echo hosting vedikas application
+         sudo ng build'''
+         } 
+  
+       {
+       sh label: '', script: '''#!/bin/bash
+       ssh ubuntu@54.215.254.191
+       sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
+       sudo curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+       echo Install Node.js 12 on Ubuntu / Debian / Linux Mint
+       sudo apt -y install nodejs
+       sudo apt -y  install gcc g++ make
+       echo Confirm Node.js 12 installation by checking the version installed.
+       sudo node --version
+       sudo npm --version 
+       echo Install Angular on Ubuntu 18.04
+       sudo npm install -g @angular/cli@9   
+       sudo git init
+       sudo git clone https://github.com/shivastunts0327/vedikaUI.git
+       cd vedikaUI
+       sudo npm install
+       sudo ng serve --host 0.0.0.0'''
+       }
+       }
+       
